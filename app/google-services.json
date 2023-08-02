@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1053603939055",
+    "project_id": "native-crash-cd3c7",
+    "storage_bucket": "native-crash-cd3c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053603939055:android:1880c0f2f63964ac48511a",
+        "android_client_info": {
+          "package_name": "com.rothbutter.nativecrash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_3gEw8fx3jVetd2z2lj9RbWo7xJXWgQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
