@@ -1,5 +1,5 @@
 import com.android.build.gradle.internal.tasks.factory.dependsOn
-import com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsExtension
+import com.google.firebase.crashlytics.gradle.CrashlyticsExtension
 
 plugins {
     id("com.android.application")
@@ -31,19 +31,6 @@ android {
         }
     }
 
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            configure<CrashlyticsExtension> {
-                // Enable processing and uploading of native symbols to Firebase servers.
-                // By default, this is disabled to improve build speeds.
-                // This flag must be enabled to see properly-symbolicated native
-                // stack traces in the Crashlytics dashboard.
-                nativeSymbolUploadEnabled = true
-            }
-        }
-    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
